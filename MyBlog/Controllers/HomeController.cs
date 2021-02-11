@@ -8,11 +8,20 @@ using MyBlog.Models;
 
 namespace MyBlog.Controllers
 {
+  
     public class HomeController : Controller
     {
+        Context c = new Context();
         public IActionResult Index()
         {
             return View();
+        }
+        public IActionResult Index2(int id)
+        {
+            var deger = c.articles.Find(id);
+
+            
+            return View(deger);
         }
 
         public IActionResult About()
