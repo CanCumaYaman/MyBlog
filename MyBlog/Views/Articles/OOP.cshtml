@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "OOP";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container articles">
+    <h1>Object Oriented Programming</h1>
+    <br />
+    <p>
+        Nesne yönelimli proglamlama mantıksal ifadeleri, işlemleri kullanmak yerine nesneler üzerinden işlemler gerçekleştirmeyi hedefleyen bir proglamlama dili modelidir. Proglamlama dilinden bağımsızdır.
+        Bu yaklaşım ile karmaşık problemleri daha anlaşılır şekilde çözebiliriz. İlk yapmamız gereken verileri modellemektir. Yani sistemde hangi nesneler olacak, özellikleri ne olacak, genel tasarımı nasıl olacak bunları belirlememiz gereklidir.
+        <br /><br />
+        Nesne yönelimli proglamlama 4 temel ilkeye dayanmaktadır;<br />
+        <br />
+        <h4>Encapsulation(Kapsülleme)</h4>
+        <br />
+        Encapsulation güvenlik için çok önemlidir. Kapsülleme ile hangi özelliklerin dışarıdan erişilebileceğini veya kullanılabileceğini belirlemekteyiz. Gizleme işini yaparken private, protected ve public erişim belirleyici anahtar kelimelerini kullanırız.
+        <br />
+        Private: Özellik ve davranışların sadece kendi sınıfında kullanılabilmesini istiyorsak private anahtar kelimesini kullanabiliriz.
+        <br />
+        Protected: Kendi sınıfında ve miras alınan alt sınıflarda kullanım için uygundur.
+        <br />
+        Public: Herkesin kullanabildiği, bir sınırı olmayan özellik ve davranışlar için kullanılır.
+        <br /><br />
+        <h4>Abstraction(Soyutlama)</h4>
+        <br />
+        Bir sınıfta özelliklerin ve metotların tanımlanmasına nedir. Mesela bir insanın adı, soyadı, yaşı gibi özelliklerini tanımlayabilmekle beraber KitapOku, SporYap gibi metotlarda tanımlayabiliriz.
+        Değişim ve gelişim yolunda avantaj sağlamaktadır. Eklemeler kolaylaşmaktadır.
+        <br /><br />
+        <h4>Inheritance(Kalıtım) </h4>
+        <br />
+        Sınıfların birbirinden türemesine denilmektedir. Alt sınıfımız üst sınıfın özelliklerini alabilir. Mesela insan ve hayvanın ortak özelliklerini tek bir sınıfta toplayarak hem insan hem hayvan sınıfları için ayrı ayrı yazıp kod fazlalığının önüne geçip doğru bir sistem tasarlamış oluruz.
+        <br /><br />
+        <h4>Polymorphism(Çok Şekillilik)</h4>
+        <br />
+        Alt sınıfların üst sınıfın gösterdiği davranışları göstermesi gerekmez. Alt sınıfların farklı davranışlar göstermesine çok biçimlilik denilmektedir. Mesela araba ve uçak nesnelerini düşündüğümüzde iki nesnede bir yerden bir yere gitmeye yani hareket etmeye yarar. Ortak olan davranış hareket etmektir ama araba hareket işlemini yerde gerçekleştirirken uçak havada gerçekleştirmektedir yani aynı olaya iki nesnede farklı bir yöntemle karşılık vermiştir.
+        <br />
+
+    </p>
+</div>
+

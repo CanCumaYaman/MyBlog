@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Clean_Code";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container articles">
+    <h1>Clean Code</h1>
+    <br />
+    <p>
+        Clean Code, kod yazarken uyulması gereken bir felsefedir. Bu felsefeyli birlikte okunabilirliği yüksek kaliteli kodlar yazabiliriz. Hemen akla şu gelebilir işimi görsün yeter kalitesinin ne önemi var ki? Benden istenileni yapıyım, istenilen sonucu çıkarıyım kod kaliteli olsa ne olur olmasa nolur. İşte bu düşünce günü kurtarmaktan daha ileriye gidemez. Birileri kodumuza baktığında bu burda ne yazmış, ne demek istemiş, bunun anlamı ne gibi birçok soru sorabilir kaldı ki ileriki bir zamanda arkamızı dönüp kodumuza baktığımızda biz bile burda ne yazmışım diyebiliriz. İşte bu yüzden bu felsefeyi izleyerek bu gibi sorunlardan kurtulmuş oluyoruz. Kodun testi, bakımı, iyileştirilmesi gibi olaylarda ise bu felsefeyi izlediğimiz için işlerimiz çok daha kolaylaşıyor.
+        Gelelim temiz kodu nasıl yazabilirize;  Aslında pekçok kaliteyi arttırmak için yöntem, tavsiye bulunmaktadı. Ben burada bunların bazılarını genel hatlarıyla değerlendireceğim.
+
+
+        <br />
+        <br />
+        <h4>Anlamlı İsimlendirme</h4>
+        <br />
+        Değişkenlerimizi, metotlarımızı, sınıflarımızı amacına yönelik şekilde isimlendirmeliyiz. Mesela bir ürün sınıfı oluşturmak istiyorsak sınıfın ismine Product(Ürün) adını vermeliyiz. Bu sınıfta ürünün adını değişken olarak tanımlayacaksak ProductName(ÜrünAdı) gibi bir isimlendirme kullanmalıyız. Ürünleri listeleyeceksek GetProduct(ÜrünleriGetir) ismini kullanmalıyız.
+        <br /><br />
+        <h4>Gerektiği Kadar Metot ve Sınıf</h4>
+        <br />
+        Amacın dışına çıkacak şekilde çok fazla metot ve sınıf kullanmak yerine olması gerektiği kadar kullanmalıyız ayrıca sınıflarımıza ve metotlarımıza tek bir işi yapma görevini vermeliyiz(SOLID Single Responsibility Principle. Detayları için <a href="/Articles/SOLID">buraya</a> tıklayınız).
+        <br /><br />
+        <h4>Metot Yorumları</h4>
+        <br />
+        Metotların tek bir işlevi yerine getirmesi gerektiğinden bahsetmiştik. Yorumlara gelecek olursak metot içinde yorum satırları kullanmamalıyız. Gereksiz kod yığınları oluşturmaktan öteye pek geçmiş olmayız. Eğer kullanıyorsak büyük ihtimalle bir yerde hata yapmışızdır bu hatayı veya gözden kaçırmayı perdelemek için bu yorum satırlarını kullanmışızdır. Eğer metotla ilgili bir bilgi içeriyorsa bunu metodu doğru isimlendirerek yapabiliriz yani eğer metot ürünleri listeleyecekse yorum satırı ile burda ürünleri listeledim gibi ifadeler kullanmak yerine metodun ismine GetProducts(ÜrünleriGetir) gibi isimlendirebiliriz.
+    </p>
+
+</div>

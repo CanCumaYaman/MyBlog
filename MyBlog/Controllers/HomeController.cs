@@ -11,11 +11,12 @@ namespace MyBlog.Controllers
   
     public class HomeController : Controller
     {
-        Context c = new Context();
+        
         public IActionResult Index()
         {
             return View();
         }
+        /*
         public IActionResult Index2(int id)
         {
             var deger = c.articles.Find(id);
@@ -23,30 +24,19 @@ namespace MyBlog.Controllers
             
             return View(deger);
         }
-
+        */
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
-
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult Comments()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

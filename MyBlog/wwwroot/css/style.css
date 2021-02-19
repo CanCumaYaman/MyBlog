@@ -9,12 +9,13 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
     background-color: #fff;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
@@ -98,6 +99,27 @@ ul {
     }
 }
 
+@media (max-width: 767px) {
+
+    .card-text {
+        font-size: 13px !important;
+    }
+   .col-md-4 .card-body a {
+        font-size: 15px !important;
+    }
+    .card-bold {
+        font-size: 15px !important;
+    }
+    .tech-btm h5 a{
+        font-size:15px;
+    }
+    .tech-btm h2 {
+        font-size: 20px;
+    }
+    .sub-meta span{
+        font-size:13px;
+    }
+}
 
 .text-uppercase {
     text-transform: uppercase;
@@ -110,9 +132,9 @@ nav {
     font-family: Montserrat;
     background-color:black;
     color: #fff;
-    padding-top: 4.4rem;
-    padding-bottom: 4.4rem;
-    position: fixed;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    
     z-index: 500;
 }
 
@@ -195,7 +217,7 @@ nav {
 /*Header*/
 header {
     background-color: white;
-    padding-top: 16rem;
+    padding-top: 0.4rem;
 }
 
 .card-title {
@@ -204,12 +226,19 @@ header {
 
 .card-text {
     font-size: 1.5rem;
+    color: #777777;
+    font-weight: 300;
 }
 
     .card-text a {
         font-family: 'Lato', sans-serif;
     }
-
+.tech-btm h5 a{
+    color:black;
+}
+.tech-btm h5{
+    margin-top:5px;
+}
 .resimKapsayici {
     position: relative;
 }
@@ -247,11 +276,56 @@ header {
 .col8-margin {
     margin: 13px;
 }
-.card-bold{
-    font-size:25px;
+.card-bold {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
 }
-/*Footer*/
-.footer-links {
+.col-md-4
+.card a{
+    text-decoration:none;
+    color:black;
+    transition:opacity 0.8s;
+}
+.col-md-4
+.card a:hover{
+    opacity:0.7;
+}
+.articles {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: 'Noto Serif', serif;
+}
+.articles-img {
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+a.btn.btn-success.read-m {
+    background: #01CD74;
     color: white;
+    border-radius: 0;
+    padding: 0.55em 2em;
+    letter-spacing: 1px;
+   
+    border: 1px solid #01CD74;
 }
 
+    a.btn.btn-success.read-m:hover, a.btn.btn-success.read-m:focus {
+        background: white;
+        color: #01CD74;
+        box-shadow: none !important;
+    }
+    
+
+/*Footer*/
+
+.footer-links {
+    color: white;
+    transition: color 0.6s;
+}
+
+    .footer-links:hover {
+        color: teal;
+    }
