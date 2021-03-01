@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "EntityFramework";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container articles">
+    <h1>Entity Framework nedir?</h1>
+    <br />
+    <p>
+        .NET 3.5'ten önce, biz (geliştiriciler) genellikle temel veritabanından uygulama verilerini kaydetmek veya almak için ADO.NET kodu veya Kurumsal Veri Erişim Bloğu yazardık. Veritabanına bir bağlantı açar, verileri veritabanına getirmek veya veritabanına göndermek için bir DataSet oluşturur, iş kurallarını uygulamak için DataSet'ten .NET nesnelerine veya tam tersi verileri dönüştürürdük. Bu, külfetli ve hataya açık bir süreçti. Microsoft, uygulamanız için veritabanıyla ilgili tüm bu etkinlikleri otomatikleştirmek için "Entity Framework" adlı bir çerçeve sağlamıştır.
+        <br />
+        Entity Framework, Microsoft tarafından desteklenen .NET uygulamaları için açık kaynaklı bir ORM çerçevesidir . Geliştiricilerin, bu verilerin depolandığı temel veritabanı tablolarına ve sütunlarına odaklanmadan, etki alanına özgü sınıfların nesnelerini kullanarak verilerle çalışmasına olanak tanır. Entity Framework ile geliştiriciler, verilerle uğraşırken daha yüksek bir soyutlama düzeyinde çalışabilir ve geleneksel uygulamalara kıyasla daha az kodla veri odaklı uygulamalar oluşturabilir ve sürdürebilir.
+        <br />
+        Resmi Tanım: “Entity Framework, .NET geliştiricilerinin .NET nesnelerini kullanarak bir veritabanıyla çalışmasını sağlayan bir nesne ilişkisel eşleyicidir (O ​​/ RM). Geliştiricilerin genellikle yazması gereken çoğu veri erişim kodu ihtiyacını ortadan kaldırır. "
+        <br />
+        Aşağıdaki şekil, Entity Framework'ün uygulamanıza nerede uyduğunu gösterir.
+        <br />
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><img class="img-fluid" src="~/images/efarticles.jpg" /></div>
+            <div class="col-md-3"></div>
+
+        </div>
+        <br />
+        Yukarıdaki şekle göre Entity Framework, işletme varlıkları (etki alanı sınıfları) ve veritabanı arasına uyar. İşletme varlıklarının özelliklerinde depolanan verileri kaydeder ve ayrıca veri tabanından veri alır ve bunları otomatik olarak işletme varlık nesnelerine dönüştürür.
+        <br /><br />
+        <h3>Entity Framework Özellikleri</h3>
+        <br />
+        <b>Çapraz platform</b>: EF Core, Windows, Linux ve Mac üzerinde çalışabilen bir çapraz platform çerçevesidir.
+        <br /> <b>Modelleme</b> : EF (Entity Framework), farklı veri türlerinin get / set özelliklerine sahip POCO (Düz Eski CLR Nesnesi) varlıklarına dayalı bir EDM (Varlık Veri Modeli) oluşturur. Varlık verilerini sorgularken veya temel veritabanına kaydederken bu modeli kullanır.
+        <br /><b>Sorgulama</b>: EF, temel veritabanından veri almak için LINQ sorgularını (C # / VB.NET) kullanmamıza izin verir. Veritabanı sağlayıcısı, bu LINQ sorgularını veritabanına özgü sorgu diline çevirecektir (örneğin ilişkisel veritabanı için SQL). EF ayrıca ham SQL sorgularını doğrudan veritabanında yürütmemize olanak tanır.
+        <br /><b>Değişiklik İzleme</b> : EF, veritabanına gönderilmesi gereken varlıklarınızın örneklerinde (Mülk değerleri) meydana gelen değişiklikleri izler.
+        <br /><b>Kaydetme</b> : EF, SaveChanges()yöntemi çağırdığınızda varlıklarınızda meydana gelen değişikliklere göre veritabanına INSERT, UPDATE ve DELETE komutlarını yürütür . EF, zaman uyumsuz SaveChangesAsync()yöntemi de sağlar .
+        <br /><b>Eşzamanlılık</b>: EF, veri veritabanından alındıktan sonra başka bir kullanıcı tarafından yapılan değişikliklerin üzerine yazma işlemini korumak için varsayılan olarak İyimser Eş Zamanlılık kullanır.
+        <br /><b>İşlemler</b>: EF, verileri sorgularken veya kaydederken otomatik işlem yönetimi gerçekleştirir. Ayrıca işlem yönetimini özelleştirmek için seçenekler sunar.
+        <br /> <b>Önbelleğe alma</b> : EF, kutudan ilk önbelleğe alma düzeyini içerir. Bu nedenle, tekrarlanan sorgulama, veritabanına ulaşmak yerine önbellekteki verileri döndürür.
+        <br /><b>Yerleşik Kurallar</b> : EF, yapılandırma programlama modeline göre kuralları takip eder ve EF modelini otomatik olarak yapılandıran bir dizi varsayılan kural içerir.
+        <br /><b>Yapılandırmalar</b> : EF, varsayılan kuralları geçersiz kılmak için veri açıklama özniteliklerini veya Fluent API'yi kullanarak EF modelini yapılandırmamıza olanak tanır.
+        <br /><b>Geçişler</b>: EF, temel veritabanı Şeması oluşturmak veya yönetmek için NuGet Paket Yöneticisi Konsolu veya Komut Satırı Arabirimi üzerinde yürütülebilecek bir dizi geçiş komutu sağlar.
+    </p>
+    </div>
+

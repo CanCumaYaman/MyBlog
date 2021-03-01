@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "WebService";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container articles">
+    <h1>Web Servis Nedir?</h1>
+    <br />
+    Web Hizmetleri , cihazların World Wide Web üzerinden iletişim kurduğu araçlardır. Bir mobil uygulama, arama motoru veya kurumsal bir sistem kullanıyor olsanız da, uygulamanın kullanıcı parçası (arayüz) cihazınızda bulunur. Veriler ve potansiyel olarak iş kuralları, ağdaki başka bir sunucuda yaşar. Arayüzünüzün sunucu parçasıyla nasıl iletişim kurduğu, Web Hizmetlerinin rolüdür.
+    <br />
+    Bir Web Hizmeti resmi tanımı “bir ağ üzerinden çalışabilir makineden makineye etkileşimi desteklemek için tasarlanmış bir yazılım sistemidir.” Dir Bunu parçalara ayırırsak, sunucular arasındaki iletişim üzerinde anlaşmaya varılmış (yani birlikte çalışabilir) bir format ve yapı gerektirir : Ne istediğinizi anlamalıyım ve size ne gönderdiğimi anlamalısınız.
+    <br />
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"><img class="img-fluid" src="~/images/whatweb-services.png" /></div>
+        <div class="col-md-3"></div>
+
+    </div>
+    <br />
+    Çoğu sistem için bu özellikler, sistemin Web Hizmeti Açıklama Dili'nde veya WSDL'de tanımlanır. WSDL, sorgular gibi gelen bilgilerin hizmet uygulamasının bunu anlamlandırması için nasıl yapılandırılması gerektiğini ve talepte bulunan uygulamanın anlayabilmesi için giden verilerin nasıl yapılandırılacağını tanımlar. Bu tanımlar XML (Extensible Markup Language) spesifikasyonları olarak saklanır. WSDL bilgileri için ortak bir yapı, düşük seviyeli protokol özelliklerini yeniden oluşturmak zorunda kalmadan iletişim arabirimlerinin geliştirilmesine izin veren Basit Nesne Erişim Protokolüdür (SOAP).
+    <br />
+    Sunucular arasındaki protokol ve veri yapısını yerinde tanımladıktan sonra, Web Hizmetinin bir sonraki seviyesi "durum" ile ilgili seçimdir: mevcut etkileşimin ne kadarı önceki etkileşimlere bağlıdır? Örnek olarak, öğle yemeği için bir şarküteriye gittiğinizde, tipik bir sandviç türü, ekmek çeşidi, çeşnilerin listesi, yeme-içme veya paket servis ile ilgili olarak gerçekleşir. Her değişimde, millet, istenen öğle yemeğinin mevcut “durumunu” hatırlar ve her değişim, öğle yemeğiniz hakkında artan bilgiler sağlar.
+    <br />
+    Aynısı bir Web Hizmeti değişiminde de geçerli olabilir; Dünya bölgesi, harita türü ve görüntü türü gibi her etkileşim bir öncekinin üzerine kurulabilir. Bu tür Web Hizmeti alışverişi, tutarsız bilgilerin mevcut olduğu veya kullanıcının kesin bilgileri döndürmek için seçim kriterlerini kullanması gerektiği durumlarda sıklıkla kullanılır. Durum modeli Web Hizmetlerini kullanmanın dezavantajı, sunucudaki durumu "hatırlamak" ile ilişkili ek yükten kaynaklanmaktadır. Bu belleğin uygulanması, ya çerezlerle ya da istemcinin her zaman aynı sunucu ile iletişim kurmasını sağlamak için istemci ve sunucu arasındaki özel bağlantılar kullanılarak yapılır. Eski çözüm güvenilir değil - bazı ajanslar çerezlere izin vermiyor,
+    <br />
+    Sonuç olarak, tercih edilen Web Hizmeti modeli vatansızdır: her bilgi alışverişi öncekilerden bağımsızdır ve eksiksizdir. Şarküteri örneğimizde, bu, öğle yemeği fişinizin kısa sipariş aşçısı tarafından alınmasına benzer. Benzer şekilde, bilgisayarlar arasında tüm talep bilgilerinin tek bir mesajda gönderilmesi, sunucu uygulamasının gerekli bilgileri daha önceki herhangi bir iletişimi hatırlamadan yürütmesine ve geri göndermesine olanak tanır. Bu değişimler WSDL ve SOAP kullanılarak veya en son mimari süreç olan Temsili Durum Transferi (REST) kullanılarak yürütülebilir .
+    <br />
+    REST modeli, World Wide Web'in kendisinin nasıl çalıştığının bir uzantısıdır. İlk olarak, bir URL çağrısı yoluyla bir site için bir istek yapılır ve site tarayıcıya döndürülür. Aynı HTML GET, POST ve PUT isteklerini kullanan bir RESTful Web Hizmeti, istenen bilgileri HTML veya XML kullanarak döndürür. Bu, geliştiricilerin Web Hizmeti çağrılarını, geri dönen verileri yorumlamak için hiçbir arabirim geliştirmeden doğrudan web sitelerine koymalarına olanak tanır. Mashup site geliştirmenin arkasındaki teori budur.
+    <br />
+    Web Hizmetleri, modern cihaz odaklı dünyamızın sessiz ama kritik omurgası haline geldi. Son 15 yılda gelişen ortak protokoller, arayüzler ve iletişim standartları, öğle yemeği siparişi verebilen, hisse senedi fiyatlarını iade edebilen veya mükemmel hediyeyi hızlı, güvenilir ve güvenli bir şekilde bulabilen mobil, tablet ve PC tabanlı uygulamalar geliştirmemize olanak tanır.
+</div>
+

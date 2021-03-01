@@ -119,6 +119,12 @@ ul {
     .sub-meta span{
         font-size:13px;
     }
+    .articles{
+        font-size:15px;
+    }
+    .articles h3,h4{
+        font-size: 15px;
+    }
 }
 
 .text-uppercase {
@@ -223,13 +229,21 @@ header {
 .card-title {
     font-size: 4rem;
 }
-
+.card{
+    border:1px solid white;
+}
 .card-text {
     font-size: 1.5rem;
     color: #777777;
     font-weight: 300;
 }
+.card-footer{
+    display:none;
 
+}
+.sub-meta span{
+    display:none;
+}
     .card-text a {
         font-family: 'Lato', sans-serif;
     }
@@ -279,6 +293,8 @@ header {
 .card-bold {
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
+    color: #54575A !important;
+   text-decoration:none !important;
 }
 .col-md-4
 .card a{
@@ -293,7 +309,7 @@ header {
 .articles {
     text-align: justify;
     margin-top: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     font-family: 'Noto Serif', serif;
 }
 .articles-img {
@@ -305,7 +321,7 @@ header {
 a.btn.btn-success.read-m {
     background: #01CD74;
     color: white;
-    border-radius: 0;
+    border-radius: 3px;
     padding: 0.55em 2em;
     letter-spacing: 1px;
    
@@ -317,14 +333,28 @@ a.btn.btn-success.read-m {
         color: #01CD74;
         box-shadow: none !important;
     }
+
+.pagination{
+    position:relative;
+    margin:auto;
+    margin-bottom:5px;
     
-
-/*Footer*/
-
-.footer-links {
-    color: white;
-    transition: color 0.6s;
 }
+    .pagination ul li a {
+        background-color: #01CD74;
+        color:white;
+        transition:background-color 0.6s;
+        border-radius:3px;
+    }
+        .pagination ul li a:hover {
+            background-color: white;
+            color: #01CD74;
+        }
+    /*Footer*/
+    .footer-links {
+        color: white;
+        transition: color 0.6s;
+    }
 
     .footer-links:hover {
         color: teal;

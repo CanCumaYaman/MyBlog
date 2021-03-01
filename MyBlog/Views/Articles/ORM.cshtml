@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "ORM";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container articles">
+    <h1>ORM Nedir?</h1>
+    <br />
+    <p>
+        ORM, nesnelerin programlama dilini veritabanı sistemlerine bağlamak için kullanıldığı, nesne yönelimli programlama kavramlarıyla birlikte SQL çalışma olanağıyla birlikte nesne ilişkisel eşleştirmeyi ifade eder. ORM'nin, sanal sistemde tabloya nesne eşlemesinin gerçekleştirilebildiği her türlü veritabanı yönetim sistemine uygulanması mümkündür. Django ORM, Dapper ORM, JOOQ ORM, SQL Alchemy, vb. Gibi birçok ORM dili türü vardır.
+
+    </p>
+    <br />
+    <h3>ORM Nasıl Çalışır?</h3>
+    <br />
+    <p>
+        Nesneler üzerinde çalışır. Dolayısıyla, ORM'lerin izlediği tüm metodoloji, nesne yönelimli paradigmaya bağlıdır. ORM'ler, veritabanındaki tablolarla sanal olarak eşleşen nesneler üretir. Bu nesneler yükseldiğinde, kodlayıcılar, özellikle dile çok fazla dikkat etmeden tablodaki herhangi bir alanı almak, değiştirmek veya silmek için kolayca çalışabilirler. Karmaşık uzun SQL sorgularının daha basit bir şekilde yazılmasını destekler. Nesneler biçiminde yazdığımız kodu anlamak ve ardından aynı şeyi veritabanına eşlemek için kitaplıkları kullanır.
+        <br />
+        Python uygulamasını oracle veritabanına bağlamak için kullanıldığını varsayalım. Bu durumda, geliştiricinin iş gereksinimlerine göre en uygun ORM'yi seçmesi gerekecektir. Bu, aşağıdaki şema ile iyi anlaşılabilir:
+        <br />
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><img class="img-fluid" src="~/images/what-is-orm.png" /></div>
+            <div class="col-md-3"></div>
+
+        </div>
+    </p>
+    <h3>Özellikleri</h3>
+    <br />
+    <b>1.</b> Uygulamayı arka uçta kullanılan veritabanı yönetim sisteminden bağımsız kılar ve böylece genel bir sorgu yazabilirsiniz. Başka bir veritabanına geçiş yapılması durumunda, ORM'nin projede uygulanması oldukça iyi bir anlaşma haline gelir.
+    <br /><b>2.</b>Uygulamayı desteklemek için kullanılan veritabanı için SQL sözdizimlerini ayrı ayrı öğrenmek için kodlayıcıların zorlukları azaltılır. Kodlayıcılar, bağlantı sorunları ile uğraşmak yerine kodu optimize etmeye ve böylece performansı iyileştirmeye odaklanabilir.
+    <br /><b>3.</b>Tüm küçük veya büyük değişiklikler ORM aracılığıyla gerçekleştirilebilir, bu nedenle verilerle uğraşırken böyle bir kısıtlama yoktur. Örneğin ,  JDBC, bir sonuç kümesinin çıkarılması, işlenmesi ve ardından veritabanına geri verilmesi konusunda birçok kısıtlama ile birlikte gelir . ORM'lerde durum böyle değildir. Veritabanındaki tek bir hücre bile alınabilir, değiştirilebilir ve geri kaydedilebilir.
+    <br /><b>4.</b>Kodda daha az müdahale olacağından bağlantı sağlam ve güvenli hale gelir. Uygulama programlama dilini veritabanının sorgu diliyle eşleştirmek için gerekli tüm yapılandırmaları ele alacaktır . Güvenli uygulamayı bir bütün olarak destekleyen daha az müdahale olacağı için.
+    <br /><b>5.</b> Kullanılan uygulama diline göre piyasada oldukça fazla sayıda ORM bulunmaktadır. İş gereksinimlerine göre kolayca seçilebilir.
+    <br /><b>6.</b> ORM kullanmanın da ek bir dezavantajı vardır. Bu, veritabanı eski dosya sistemlerinde olduğu ve düzensiz olduğu zamandır. Çok fazla veriyi düzenlemek ve ardından bunu ORM ile eşleştirmek bir görev haline gelir. Bu nedenle, arka uç oldukça yönetildiğinde ORM kullanılması önerilir.
+   <br /> <br /><h3>Avantajlar</h3><br />
+    ORM'nin öne çıkan özelliklerinden bazıları aşağıda listelenmiştir:
+    <br />
+    <br /><b>1.</b> Veritabanı sorgu dili öğrenmeye gerek yok.
+    <br /><b>2.</b>Veri soyutlama fikrini yayar ve böylece veri güvenliğini artırır.
+    <br /><b>3.</b>Büyük prosedürleri arka uçta pl / SQL'de depolamak yerine , bunlar ön uçta kaydedilebilir. Değişiklik yapma esnekliğini artırır.
+    <br /><b>4.</b> Veritabanı yapısında 1: m, n: m ve daha az 1: 1 gibi birçok ilişki varsa ORM iyi çalışır.
+    <br /><b>5.</b>Veritabanı sorgu parçası işlemeyi azaltarak kodlayıcıların zorluklarını azaltır.
+    <br /><b>6.</b>ORM aracılığıyla sorgular, arka uçta hangi veritabanının kullanıldığına bakılmaksızın yazılabilir. Bu, kodlayıcıya çok fazla esneklik sağlar. Bu, ORM'lerin sunduğu en büyük avantajlardan biridir.
+    <br /><b>7.</b> Bu, herhangi bir nesne yönelimli dil için mevcuttur, bu nedenle yalnızca bir dile özgü değildir.
+</div>
+

@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Json";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container articles">
+    <h1>JSON Nedir?</h1>
+    <br />
+    JSON (JavaScript Object Notation), insanlar tarafından okunabilen bilgileri saklamak ve değiştirmek için bir formattır. Dosya yalnızca metin içerir ve .json uzantısını kullanır .
+    <br />
+    In this article, you’ll learn about what JSON is used for and how it can improve your website’s performance.
+    <br /><br />
+    <h3>JSON Ne İçin Kullanılır?</h3>
+    <br />
+    JSON, yapılandırılmış bilgileri depolayan ve esas olarak bir sunucu ile istemci arasında veri aktarmak için kullanılan bir formattır.
+    <br />
+    Dosya temelde benzer işlevlere sahip XML'e (Kapsamlı Biçimlendirme Dili) daha basit ve daha hafif bir alternatiftir .
+    <br />
+    Geliştiriciler, AJAX (Eşzamansız JavaScript ve XML) ile çalışmak için JSON kullanır . Bu biçimler, depolanan verilerin eşzamansız yüklenmesini sağlamak için birlikte iyi çalışır, yani bir web sitesi sayfayı yenilemeden bilgilerini güncelleyebilir.
+    <br />
+    Bu işlemin JSON ile yapılması XML / RSS'den daha kolaydır. Ve bugün birçok web sitesi AJAX'ı benimsediğinden, .json dosyası çok popüler hale geldi.
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"><img class="img-fluid" src="~/images/whatjson.png" /></div>
+        <div class="col-md-3"></div>
+
+    </div><br />
+    <h3>JSON Sözdizimi</h3>
+    <br />
+    .Json dosyasını doğru bir şekilde oluşturmak için doğru sözdizimini izlemeniz gerekir.
+    <br />
+    Bir JSON nesnesinin iki temel öğesi vardır: Anahtarlar ve Değerler.
+    <br />
+    <b>1.</b> Anahtarlar dizge olmalıdır. Tırnak işaretleriyle çevrili bir dizi karakter içerirler.
+   <br /> <b>2. </b> Değerler , geçerli bir JSON veri türüdür. Dizi, nesne, dize, boole, sayı veya boş biçiminde olabilir.
+    <br /> JSON nesnesi küme ayraçları {} ile başlar ve biter . İçinde virgülle ayrılmış iki veya daha fazla anahtar / değer çifti olabilir . Bu arada, her tuşun ardından onu değerden ayırmak için iki nokta üst üste işareti bulunur .
+    <br /><br />
+    Örnek Kullanım:<br />
+    <br />
+   <code>
+       {
+       "Ad":"Can Cuma",
+       "Soyad":"YAMAN",
+       "Yaş":22
+       }
+   </code>
+
+</div>
+

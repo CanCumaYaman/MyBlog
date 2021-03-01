@@ -5,46 +5,57 @@
 }
 
 <div class="container articles">
-    <h1>Design Patterns(Tasarım Desenleri)</h1>
-    <br />
-    Projelerimizi gerçekleştirirken pekçok sorunla karşılaşmışızdır. Genel olarak bu sorunlara ya kendimiz çözüm bulmuşuzdur yada başka birilerinden yardım almışızdır. Neticede sorunu çözmüşüzdür. Bundan sonraki projelerde aynı sorunla karşılaştığımız zaman hemen aklımıza bu problemi daha önce çözdüğümüz gelir ve o çözüm yoluyla yolumuza devam ederiz. İşte tasarım desenleri bu noktada bize yardımcı oluyor.<br /> Tasarım desenleri sıklıkla karşılaşılan benzer problemleri çözmek için ortaya konulmuş dilden bağımsız kalıplardır. Tasarım desenlerini 3 ana başlık altında değerlendirebiliriz.
-    <br /><br />
-    <h3>Creational Patterns (Yaratımsal Kalıplar)</h3><br />
-    Yaratımsal kalıpları bizlere nesneleri new anahtar kelimesiyle oluşturmak yerine alternatif yöntemler sunar. Yani bizlere nesnelerin oluşturulmasında yol gösteririr. 6 alt başlıkta toplanır.
-    <br />
-    <b>Singleton (Tek Nesne)</b>: Bir sınıfın yalnızca tek bir örneği olabilir.
-    <br /><b>Abstract Factory (Soyut Fabrika)</b>: Birkaç sınıf ailesinin bir örneğini oluşturur.
-    <br /><b>Builder (Kurulum)</b>: Nesne yapısını temsilinden ayırır
-    <br /><b>Factory (Fabrika)</b>: Birbirine benzeyen ili sınıfı bir sınıfta birleştirip soyutlama yapar.
-    <br /><b>Factory Method (Fabrika Metodu)</b>: Türetilmiş sınıfın örneğini oluşturur.
-    <br /><b>Prototype (Prototip)</b>:  Kopyalanacak, tamamen başlatılmış bir örnek oluşturur
-    <br /><br />
-    <h3>Structural Patterns (Yapısal Kalıplar)</h3>
-    <br />
-    Yapısal kalıplar nesnelerimiz arasındaki ilişkilerin belirlenmesini ve düzenlenmesine imkan sağlar. Kalıtım nasıl olmalı, hangi nesneleri içermeli ve sınıfların birbirlerine olan bağlılığı ne düzeyde olmalı gibi konularda yardımcı olur. Yapısal kalıplarıda 7 alt başlıkta değerlendirebiliriz. Bunlar;<br />
-    <b>Adapter (Adaptör)</b>: Birbirinden farklı sınıfların eşleme arayüzüdür.
-    <br /><b>Bridge (Köprü)</b>: Bir nesnesyle o nesnenin arayüzünü ayırır.
-    <br /><b>Composite (Ağaç Yapısı)</b>: Nesnelerin ağaç yapısı.
-    <br /><b>Decorator (Dekorasyon)</b>: Nesnelere dinamik olarak yeni görevler verme.
-    <br /><b>Facade (Ön Yüz)</b>: Tüm alt sistemleri temsili tek bir sınıf.
-    <br /><b>Flyweight (Sinek Siklet)</b>: Verimli bir paylaşım için kullanılan örnek.
-    <br /><b>Proxy (Vekil)</b>: Başka bir nesneyi temsil eden nesne.
-    <br /><br />
-    <h3>Behavioral Patterns (Davranışsal Kalıplar)</h3>
-    <br />
-    Nesne davranışlarını takip edip aralarındaki ilişkiye göre çözümler sunar. Nesneler arasındaki iletişimi doğru bir şekilde kurmamızı sağlar. Davranışsal kalıplarıda 10 alt başlıkta değerlendirebiliriz.
-    <br />
-    <b>Chain of Responsibility (Sorumluluk Zinciri)</b>: Bir nesne zincirine istek iletmenin bir yöntemidir.
-    <br /><b>Command (Komut)</b> Bir komutu nesne olarak encapsulation işlemini yerine getirmede kullanılır.
-    <br /> <b>Interpreter (Yorumlayıcı)</b> Dil öğelerini programa dahil etme.
-    <br /> <b>Iterator (Tekrarlayıcı)</b> Bir liste vb. ifadelerin her bir elemanına  sırayla erişme.
-    <br /> <b>Mediator (Arabulucu)</b> Sınıflarımız arasındaki iletişimi tanımlar.
-    <br /><b>Observer (Gözlemci)</b> Sınıflarda gerçekleşen değişiklikleri bildirmenin bir yöntemidir.
-    <br /><b>State (Durum)</b> Bir nesnenin durumu değiştiği zaman buna bağlı olarak davranışınıda değiştirme.
-    <br /> <b>Strategy (Strateji)</b> Sınıf içerisindeki bir algoritmayı kapsar.
-    <br /> <b>Template Method (Şablon Metodu)</b> Algoritmanın adımlarını alt sınıfa iletme.
-    <br /><b>Visitor (Ziyaretçi)</b> Bir sınıfa yeni bir işlem tanımlar.
+  
 
-</div>
+            <h1>Design Patterns(Tasarım Desenleri)</h1>
+            <br />
+
+            Projelerimizi gerçekleştirirken pekçok sorunla karşılaşmışızdır. Genel olarak bu sorunlara ya kendimiz çözüm bulmuşuzdur yada başka birilerinden yardım almışızdır. Neticede sorunu çözmüşüzdür. Bundan sonraki projelerde aynı sorunla karşılaştığımız zaman hemen aklımıza bu problemi daha önce çözdüğümüz gelir ve o çözüm yoluyla yolumuza devam ederiz. İşte tasarım desenleri bu noktada bize yardımcı oluyor.<br /> Tasarım desenleri sıklıkla karşılaşılan benzer problemleri çözmek için ortaya konulmuş dilden bağımsız kalıplardır. Tasarım desenlerini 3 ana başlık altında değerlendirebiliriz.
+            <br /><br />
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6"><img class="img-fluid" src="~/images/whatpattern.jpg" /></div>
+                <div class="col-md-3"></div>
+
+            </div> <br />
+            <h3>Creational Patterns (Yaratımsal Kalıplar)</h3><br />
+            Yaratımsal kalıpları bizlere nesneleri new anahtar kelimesiyle oluşturmak yerine alternatif yöntemler sunar. Yani bizlere nesnelerin oluşturulmasında yol gösteririr. 6 alt başlıkta toplanır.
+            <br />
+            <b>Singleton (Tek Nesne)</b>: Bir sınıfın yalnızca tek bir örneği olabilir.
+            <br /><b>Abstract Factory (Soyut Fabrika)</b>: Birkaç sınıf ailesinin bir örneğini oluşturur.
+            <br /><b>Builder (Kurulum)</b>: Nesne yapısını temsilinden ayırır
+            <br /><b>Factory (Fabrika)</b>: Birbirine benzeyen ili sınıfı bir sınıfta birleştirip soyutlama yapar.
+            <br /><b>Factory Method (Fabrika Metodu)</b>: Türetilmiş sınıfın örneğini oluşturur.
+            <br /><b>Prototype (Prototip)</b>:  Kopyalanacak, tamamen başlatılmış bir örnek oluşturur
+            <br /><br />
+            <h3>Structural Patterns (Yapısal Kalıplar)</h3>
+            <br />
+            Yapısal kalıplar nesnelerimiz arasındaki ilişkilerin belirlenmesini ve düzenlenmesine imkan sağlar. Kalıtım nasıl olmalı, hangi nesneleri içermeli ve sınıfların birbirlerine olan bağlılığı ne düzeyde olmalı gibi konularda yardımcı olur. Yapısal kalıplarıda 7 alt başlıkta değerlendirebiliriz. Bunlar;<br />
+            <b>Adapter (Adaptör)</b>: Birbirinden farklı sınıfların eşleme arayüzüdür.
+            <br /><b>Bridge (Köprü)</b>: Bir nesnesyle o nesnenin arayüzünü ayırır.
+            <br /><b>Composite (Ağaç Yapısı)</b>: Nesnelerin ağaç yapısı.
+            <br /><b>Decorator (Dekorasyon)</b>: Nesnelere dinamik olarak yeni görevler verme.
+            <br /><b>Facade (Ön Yüz)</b>: Tüm alt sistemleri temsili tek bir sınıf.
+            <br /><b>Flyweight (Sinek Siklet)</b>: Verimli bir paylaşım için kullanılan örnek.
+            <br /><b>Proxy (Vekil)</b>: Başka bir nesneyi temsil eden nesne.
+            <br /><br />
+            <h3>Behavioral Patterns (Davranışsal Kalıplar)</h3>
+            <br />
+            Nesne davranışlarını takip edip aralarındaki ilişkiye göre çözümler sunar. Nesneler arasındaki iletişimi doğru bir şekilde kurmamızı sağlar. Davranışsal kalıplarıda 10 alt başlıkta değerlendirebiliriz.
+            <br />
+            <b>Chain of Responsibility (Sorumluluk Zinciri)</b>: Bir nesne zincirine istek iletmenin bir yöntemidir.
+            <br /><b>Command (Komut)</b> Bir komutu nesne olarak encapsulation işlemini yerine getirmede kullanılır.
+            <br /> <b>Interpreter (Yorumlayıcı)</b> Dil öğelerini programa dahil etme.
+            <br /> <b>Iterator (Tekrarlayıcı)</b> Bir liste vb. ifadelerin her bir elemanına  sırayla erişme.
+            <br /> <b>Mediator (Arabulucu)</b> Sınıflarımız arasındaki iletişimi tanımlar.
+            <br /><b>Observer (Gözlemci)</b> Sınıflarda gerçekleşen değişiklikleri bildirmenin bir yöntemidir.
+            <br /><b>State (Durum)</b> Bir nesnenin durumu değiştiği zaman buna bağlı olarak davranışınıda değiştirme.
+            <br /> <b>Strategy (Strateji)</b> Sınıf içerisindeki bir algoritmayı kapsar.
+            <br /> <b>Template Method (Şablon Metodu)</b> Algoritmanın adımlarını alt sınıfa iletme.
+            <br /><b>Visitor (Ziyaretçi)</b> Bir sınıfa yeni bir işlem tanımlar.
+        </div>
+
+  
 
 @Html.Partial("~/Views/Home/Comments.cshtml")

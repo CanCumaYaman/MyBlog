@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Waterfall";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container articles">
+    <h1>Waterfall Model Nedir?</h1>
+    <br />
+    <p>
+        Şelale , yazılım geliştirmeye doğrusal bir yaklaşımdır. Bu metodolojide, olayların sırası şuna benzer:
+        <br />
+        <b>1.</b>Gereksinimleri toplayın ve belgeleyin
+        <br /><b>2.</b>Tasarım (değiştir | kaynağı değiştir)
+        <br /><b>3.</b> Kod ve birim testi
+        <br /><b>4.</b> Sistem testi gerçekleştirin
+        <br /><b>5.</b>Kullanıcı kabul testi (UAT) gerçekleştirin
+        <br /><b>6.</b>Herhangi bir sorunu düzeltin
+        <br /><b>7.</b>Bitmiş ürünü teslim edin
+        <br /><b>8.</b>Bir de gerçek Şelale geliştirme projesi, bunların her yazılım geliştirme ayrı aşamasını temsil eder ve bir sonraki başlamazdan önce her aşama genellikle bitirir. Ayrıca her biri arasında tipik olarak bir sahne kapısı vardır; örneğin, tasarım başlamadan önce gereksinimler müşteri tarafından gözden geçirilmeli ve onaylanmalıdır.
+        <br /><br />
+      
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><img class="img-fluid" src="~/images/whatwaterfallpng.png" /></div>
+            <div class="col-md-3"></div>
+
+        </div><br />
+        Şelale yaklaşımında iyi ve kötü şeyler var. Açık olumlu tarafı:
+        <br /><br />
+        Geliştiriciler ve müşteriler, geliştirme yaşam döngüsünün başlarında nelerin sunulacağı konusunda hemfikirdir. Bu, planlama ve tasarımı daha kolay hale getirir.
+        <br /> İşin tüm kapsamı önceden bilindiği için ilerleme daha kolay ölçülür.
+        <br /> Geliştirme çabası boyunca, projenin aktif aşamasına bağlı olarak ekibin çeşitli üyelerinin dahil olması veya başka işlere devam etmesi mümkündür. Örneğin, iş analistleri, geliştiriciler diğer projeler üzerinde çalışırken ne yapılması gerektiğini öğrenebilir ve belgeleyebilir. Test uzmanları, kodlama devam ederken gereksinim belgelerinden test komut dosyaları hazırlayabilir.
+        <br /> İncelemeler, onaylar, durum toplantıları vb. Dışında, gereksinimler aşamasından sonra müşterinin varlığı kesinlikle gerekli değildir.
+        <br /> Tasarım, geliştirme yaşam döngüsünün erken aşamalarında tamamlandığı için, bu yaklaşım, harici sistemlerle entegrasyon için birden çok yazılım bileşeninin (bazen paralel olarak) tasarlanması gereken projelere uygundur.
+        <br /> Son olarak, yazılım, tüm yazılım teslimatlarının daha eksiksiz bir şekilde anlaşılmasına dayalı olarak tamamen ve daha dikkatli bir şekilde tasarlanabilir . Bu, kod parçalarının tanımlanması ve daha sonra iyi sığabilecekleri veya uymayabilecekleri bir uygulamaya eklendikçe ortaya çıkabilecek bir geliştirme olgusu olan "parça parça etkisi" olasılığı daha düşük olan daha iyi bir yazılım tasarımı sağlar.
+        <br /><br /> İşte  saf bir Şelale yaklaşımı kullanarak karşılaştığımız bazı sorunlar :
+        <br /><br />
+        Neredeyse her zaman yetersiz kalan bir alan, gereksinimlerin etkililiğidir . Gereksinimleri bir müşteri için anlamlı olacak şekilde toplamak ve belgelemek bence yazılım geliştirmenin en zor kısmıdır. Müşteriler bazen ayrıntılardan korkar ve bu yaklaşımla projenin erken aşamalarında sağlanan belirli ayrıntılara ihtiyaç duyulur. Ek olarak, müşteriler bir uygulamayı her zaman bir gereklilikler belgesinden görselleştiremezler. Tel kafesler ve örnekler yardımcı olabilir, ancak çoğu son kullanıcının, ne alacaklarının iyi bir resmini elde etmek için bu öğeleri yazılı gereksinimlerle bir araya getirmede zorluk yaşadığına şüphe yok.
+        <br />Saf Şelale geliştirmenin bir başka potansiyel dezavantajı, müşterinin teslim edilen yazılım ürününden memnun olmayacağı olasılığıdır. Tüm teslimatlar dokümante edilmiş gereksinimlere dayandığından, müşteri neredeyse bitene kadar neyin teslim edileceğini göremeyebilir. O zamana kadar, değişikliklerin uygulanması zor (ve maliyetli) olabilir.
+    </p>
+</div>
+
